@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Fibonacci</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script language="javascript" type="text/javascript">
+        function suma(){
+            n1=document.formu.n.value
+            x=parseInt(n1)
+            a=0
+            b=1
+            s=""
+            for (var i=0; i<x; i++) {
+                c=String(a)
+                var s=s+", "+c
+                fn=a+b
+                a=b
+                b=fn
+                document.formu.re.value=s
+            }
+        }
+    </script>    
+</head>
+<body>
+<form action="" name="formu" method="">
+	<p>Inserte numero:</p>
+	<input type="text" name="n" class="field"><br/>
+
+	<p>Resultado:</p>
+	<textarea class="field" name="re"></textarea> <br/>
+
+	<p class="center-content">
+        <input type="button" class="btn btn-green" name="calculo" onclick="suma()" value="Suma"></td>
+	</p>
+</form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JAVA</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script language="javascript" type="text/javascript">
+        function suma(){
+                    n1=document.formu.n.value
+                    x=parseInt(n1)
+                    s=""
+                    t=1
+                    for (i=1; i<=x; i++) {
+                        t=t*i
+                    }
+                    document.formu.re.value=t
+                }
+    </script>    
+</head>
+<body>
+<form action="" name="formu" method="">
+	<p>Inserte numero:</p>
+	<input type="text" name="n" class="field"><br/>
+
+	<p>Resultado:</p>
+	<textarea class="field" name="re"></textarea> <br/>
+
+	<p class="center-content">
+        <input type="button" class="btn btn-green" name="calculo" onclick="suma()" value="Suma"></td>
+	</p>
+</form>
+</body>
+</html>
